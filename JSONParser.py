@@ -13,7 +13,7 @@ ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-address = 'http://py4e-data.dr-chuck.net/comments_42.json'
+address = 'http://py4e-data.dr-chuck.net/comments_707173.json'
 parms = dict()
 parms['address'] = address
 
@@ -32,3 +32,5 @@ for item in info['comments']:
 	Adder = item['count']
 	Sum = Adder + Sum
 print(Sum)
+while True:
+	print(Sum)
